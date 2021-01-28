@@ -67,8 +67,8 @@ class linear_solver():
 def main():
     # prepare the dataset
     print('prepare dataset')
-    df_m = pd.read_csv("/data/movielens/ml-25m/movies.csv")
-    df_r = pd.read_csv("/data/movielens/ml-25m/ratings.csv")
+    df_m = pd.read_csv("movies.csv")
+    df_r = pd.read_csv("ratings.csv")
 
     df_m['year'] = df_m['title'].str.extract(r'[(](\d*?)[)]', expand=False)
     df_m = df_m[pd.isnull(df_m['year']) == False]
