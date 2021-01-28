@@ -1,0 +1,5 @@
+taichi==0.6.41
+matplotlib==2.1.1
+numpy==1.13.3
+pandas==0.22.0
+scikit_learn==0.24.1
